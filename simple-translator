@@ -1,0 +1,15 @@
+from translate import Translator
+
+
+
+# Get user input
+user_input = input("Enter text to translate: ")
+
+# Create a translator object
+translator = Translator(to_lang = "es") # Translate to Spanish
+
+# Translate the text
+translation = translator.translate(user_input)
+
+# Print the translation
+print(f"Translation: {translation}")
